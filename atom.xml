@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https:// mooko.xyz</id>
+    <title>X同学要学习</title>
+    <updated>2022-03-13T13:44:41.798Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https:// mooko.xyz"/>
+    <link rel="self" href="https:// mooko.xyz/atom.xml"/>
+    <subtitle>学校很大，大到能容下几千人；学校也很小，小到一出教室，就能看到想看的人。</subtitle>
+    <logo>https:// mooko.xyz/images/avatar.png</logo>
+    <icon>https:// mooko.xyz/favicon.ico</icon>
+    <rights>All rights reserved 2022, X同学要学习</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https:// mooko.xyz/post/hello-gridea/</id>
+        <link href="https:// mooko.xyz/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></content>
+    </entry>
+</feed>
