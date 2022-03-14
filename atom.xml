@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mooko.xyz</id>
+    <id>http://localhost:4000</id>
     <title>X同学要学习</title>
-    <updated>2022-03-14T16:46:37.590Z</updated>
+    <updated>2022-03-14T16:49:27.182Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://mooko.xyz"/>
-    <link rel="self" href="https://mooko.xyz/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>学校很大，大到能纳几千人，是人群熙熙攘攘；
 &lt;br&gt;
 学校很小，小到一出教室，就能看到想看的人。</subtitle>
-    <logo>https://mooko.xyz/images/avatar.png</logo>
-    <icon>https://mooko.xyz/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2022, X同学要学习</rights>
     <entry>
         <title type="html"><![CDATA[关于博客同步报错and解决方法]]></title>
-        <id>https://mooko.xyz/guan-yu-bo-ke-tong-bu-bao-cuo/</id>
-        <link href="https://mooko.xyz/guan-yu-bo-ke-tong-bu-bao-cuo/">
+        <id>http://localhost:4000/guan-yu-bo-ke-tong-bu-bao-cuo/</id>
+        <link href="http://localhost:4000/guan-yu-bo-ke-tong-bu-bao-cuo/">
         </link>
         <updated>2022-03-14T16:15:31.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="报错解决方法合集">报错解决方法合集</h2>
@@ -25,8 +25,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[LANDrop]]></title>
-        <id>https://mooko.xyz/landrop/</id>
-        <link href="https://mooko.xyz/landrop/">
+        <id>http://localhost:4000/landrop/</id>
+        <link href="http://localhost:4000/landrop/">
         </link>
         <updated>2022-03-14T12:35:54.000Z</updated>
         <summary type="html"><![CDATA[<p>📣一款 类 AirDrop 跨平台局域网文件传输工具</p>
@@ -36,8 +36,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Snipaste]]></title>
-        <id>https://mooko.xyz/snipaste/</id>
-        <link href="https://mooko.xyz/snipaste/">
+        <id>http://localhost:4000/snipaste/</id>
+        <link href="http://localhost:4000/snipaste/">
         </link>
         <updated>2022-03-14T12:09:40.000Z</updated>
         <summary type="html"><![CDATA[<p>📣 Snipaste 一款免费. 免安装. 可个性定制</p>
@@ -47,8 +47,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[KMS一键激活脚本]]></title>
-        <id>https://mooko.xyz/kms-yi-jian-ji-huo-jiao-ben/</id>
-        <link href="https://mooko.xyz/kms-yi-jian-ji-huo-jiao-ben/">
+        <id>http://localhost:4000/kms-yi-jian-ji-huo-jiao-ben/</id>
+        <link href="http://localhost:4000/kms-yi-jian-ji-huo-jiao-ben/">
         </link>
         <updated>2022-03-13T14:43:04.000Z</updated>
         <summary type="html"><![CDATA[<p>💾一个激活系统，激活office的脚本<br>
@@ -60,8 +60,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://mooko.xyz/hello-gridea/</id>
-        <link href="https://mooko.xyz/hello-gridea/">
+        <id>http://localhost:4000/hello-gridea/</id>
+        <link href="http://localhost:4000/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
