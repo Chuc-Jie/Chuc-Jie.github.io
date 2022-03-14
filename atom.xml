@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mooko.xyz</id>
     <title>X同学要学习</title>
-    <updated>2022-03-14T16:09:52.895Z</updated>
+    <updated>2022-03-14T16:22:01.530Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mooko.xyz"/>
     <link rel="self" href="https://mooko.xyz/atom.xml"/>
@@ -12,6 +12,17 @@
     <logo>https://mooko.xyz/images/avatar.png</logo>
     <icon>https://mooko.xyz/favicon.ico</icon>
     <rights>All rights reserved 2022, X同学要学习</rights>
+    <entry>
+        <title type="html"><![CDATA[关于博客同步报错and解决方法]]></title>
+        <id>https://mooko.xyz/guan-yu-bo-ke-tong-bu-bao-cuo/</id>
+        <link href="https://mooko.xyz/guan-yu-bo-ke-tong-bu-bao-cuo/">
+        </link>
+        <updated>2022-03-14T16:15:31.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="报错解决方法合集">报错解决方法合集</h2>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="报错解决方法合集">报错解决方法合集</h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[LANDrop]]></title>
         <id>https://mooko.xyz/landrop/</id>
