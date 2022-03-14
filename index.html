@@ -1,315 +1,184 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>X同学要学习</title>
-<meta name="description" content="学校很大，大到能容下几千人；学校也很小，小到一出教室，就能看到想看的人。" />
-<link rel="shortcut icon" href="https://mooko.xyz/favicon.ico?v=1647271884676">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+<link rel="shortcut icon" href="https://mooko.xyz/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://mooko.xyz/media/css/tailwind.css">
 <link rel="stylesheet" href="https://mooko.xyz/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="X同学要学习 - Atom Feed" href="https://mooko.xyz/atom.xml">
 
+    
 
+  <meta name="description" content="学校很大，大到能纳几千人，是人群熙熙攘攘；
+<br>
+学校很小，小到一出教室，就能看到想看的人。" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-  </head>
-  <body>
-    <div class="main px-4 flex flex-col lg:flex-row">
-      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
-  <div class="lg:sticky top-0">
-    <div class="sidebar-content">
-      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
-        <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="https://mooko.xyz">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://mooko.xyz/images/avatar.png?v=1647271884676" alt="">
-        </a>
-        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">X同学要学习</h1>
-      </div>
-      
-        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
-          <p class="my-4 text-gray-600 font-light hidden lg:block">
-            学校很大，大到能容下几千人；学校也很小，小到一出教室，就能看到想看的人。
-          </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-          </div>
-        </div>
-      
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
     </div>
   </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="https://Chuc-Jie.github.io/post/she-ying-zuo-pin" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        资源仓库
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
+    
+    <a href="https://mooko.xyz/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
 
-<div class="menu-container">
-  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
-  <div>
-    
+    <div class="max-w-4xl w-full mx-auto ">
       
-        <a href="/" class="menu" style="animation-delay: 0s">
-          首页
-        </a>
-      
-    
-      
-        <a href="https://Chuc-Jie.github.io/post/she-ying-zuo-pin" class="menu" style="animation-delay: 0.2s">
-          资源仓库
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu" style="animation-delay: 0.4s">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu" style="animation-delay: 0.6000000000000001s">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" style="animation-delay: 0.8s">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="site-footer">
-    <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">X同学要学习</a></div>
-    <a class="rss" href="https://mooko.xyz/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-<div class="mask" onclick="closeMenu()">
-</div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="latest-article text-lg text-gray-700 mb-8">
-          <i class="ri-article-line"></i>
-          最新文章
-        </h2>
-        
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://mooko.xyz/post/ce-shi/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">测试</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2022-03-14 / 1 min read</div>
+        <header class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
+  <div class="flex-1 order-2 md:order-1 md:pr-16">
+    <div class="text-4xl font-bold text-center md:text-left">
+      X同学要学习
     </div>
-  </section>
+    <div class="text-xl text-gray-500 mt-4 text-center md:text-left">
+      学校很大，大到能纳几千人，是人群熙熙攘攘；
+<br>
+学校很小，小到一出教室，就能看到想看的人。
+    </div>
+    
+    
+  </div>
+  <div class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
+    <img class="rounded-full object-cover" src="https://mooko.xyz/images/avatar.png?v=1647274138688" alt="X同学要学习" width="100%" height="100%">
+  </div>
+</header>
+      
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${1 * 0.2}s` }">
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://mooko.xyz/post/landrop/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://s2.loli.net/2022/03/14/MUqpEcx1WfSnuD8.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://mooko.xyz/post/landrop/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">LANDrop</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://mooko.xyz/landrop/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          LANDrop
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022-03-14</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>📣一款 类 AirDrop 跨平台局域网文件传输工具</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2022-03-14 / 1 min read</div>
+      <a href="https://mooko.xyz/landrop/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://s2.loli.net/2022/03/14/MUqpEcx1WfSnuD8.jpg" alt="LANDrop">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${2 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://mooko.xyz/post/snipaste/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://s2.loli.net/2022/03/14/LxPUQ1JFtfCsODX.png'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://mooko.xyz/post/snipaste/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">Snipaste</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://mooko.xyz/snipaste/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Snipaste
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022-03-14</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>📣 Snipaste 一款免费. 免安装. 可个性定制</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2022-03-14 / 1 min read</div>
+      <a href="https://mooko.xyz/snipaste/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://s2.loli.net/2022/03/14/LxPUQ1JFtfCsODX.png" alt="Snipaste">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${3 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://mooko.xyz/post/kms-yi-jian-ji-huo-jiao-ben/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://cdn.jsdelivr.net/gh/CangShui/mycdncss-56ty4o56yuo2sf1sz2x1456j1r856t41ws2d1s2g1d521y52o41u31h0rsdg65sae4ds10gsd51g3s21et5612op120/myimgfile/694786468904065.gif'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://mooko.xyz/post/kms-yi-jian-ji-huo-jiao-ben/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">KMS一键激活脚本</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://mooko.xyz/kms-yi-jian-ji-huo-jiao-ben/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          KMS一键激活脚本
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022-03-13</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>💾一个激活系统，激活office的脚本<br>
 🔔关于它有多好用，谁用谁知道！</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2022-03-13 / 1 min read</div>
+      <a href="https://mooko.xyz/kms-yi-jian-ji-huo-jiao-ben/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://cdn.jsdelivr.net/gh/CangShui/mycdncss-56ty4o56yuo2sf1sz2x1456j1r856t41ws2d1s2g1d521y52o41u31h0rsdg65sae4ds10gsd51g3s21et5612op120/myimgfile/694786468904065.gif" alt="KMS一键激活脚本">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${4 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://mooko.xyz/post/hello-gridea/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://mooko.xyz/post-images/hello-gridea.png'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://mooko.xyz/post/hello-gridea/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">Hello Gridea</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://mooko.xyz/hello-gridea/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Hello Gridea
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2018-12-12</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2018-12-12 / 2 min read</div>
+      <a href="https://mooko.xyz/hello-gridea/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
-
-        <div class="read-more">
-          
-        </div>
-        <div class="index-page">
-          <div class="pagination-container animated fadeIn">
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://mooko.xyz/post-images/hello-gridea.png" alt="Hello Gridea">
+    
+  </div>
   
-  
-</div>
-
-        </div>
       </div>
+
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://mooko.xyz/" target="_blank">X同学要学习</a>
+</footer>
+
     </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://mooko.xyz/media/scripts/main.js"></script>
+</body>
 
-    <script src="https://mooko.xyz/media/prism.js"></script>  
-<script>
-
-Prism.highlightAll()
-let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach((link, index) => {
-    let section = document.getElementById(decodeURI(link.hash).substring(1));
-    let nextSection = null
-    if (mainNavLinks[index + 1]) {
-      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-    }
-    if (section.offsetTop <= fromTop) {
-      if (nextSection) {
-        if (nextSection.offsetTop > fromTop) {
-          link.classList.add("current");
-        } else {
-          link.classList.remove("current");    
-        }
-      } else {
-        link.classList.add("current");
-      }
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target
-          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
-          lazyImage.classList.remove("lazy")
-          lazyImageObserver.unobserve(lazyImage)
-        }
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage)
-    })
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
-
-const menuContainer = document.querySelector('.menu-container')
-const menus = document.querySelectorAll('.menu-container .menu')
-const mask = document.querySelector('.mask')
-const contentWrapper = document.querySelector('.content-wrapper')
-const latestArticle = document.querySelector('.latest-article')
-const readMore = document.querySelector('.read-more')
-const indexPage = document.querySelector('.index-page')
-
-const isHome = location.pathname === '/'
-if (latestArticle) {
-  latestArticle.style.display = isHome ? 'block' : 'none'
-  readMore.style.display = isHome ? 'block' : 'none'
-  indexPage.style.display = isHome ? 'none' : 'block'
-}
-
-const openMenu = () => {
-  menuContainer.classList.add('open')
-  menus.forEach(menu => {
-    menu.classList.add('animated', 'fadeInLeft')
-  })
-  mask.classList.add('open')
-  contentWrapper.classList.add('is-second')
-}
-
-const closeMenu = () => {
-  menuContainer.classList.remove('open')
-  menus.forEach(menu => {
-    menu.classList.remove('animated', 'fadeInLeft')
-  })
-  mask.classList.remove('open')
-  contentWrapper.classList.remove('is-second')
-}
-</script>
-  
-  </body>
 </html>
