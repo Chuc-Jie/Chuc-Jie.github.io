@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://Chuc-Jie.github.io</id>
+    <id>https://mooko.xyz</id>
     <title>X同学要学习</title>
-    <updated>2022-03-14T13:35:40.768Z</updated>
+    <updated>2022-03-14T13:36:52.434Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://Chuc-Jie.github.io"/>
-    <link rel="self" href="https://Chuc-Jie.github.io/atom.xml"/>
+    <link rel="alternate" href="https://mooko.xyz"/>
+    <link rel="self" href="https://mooko.xyz/atom.xml"/>
     <subtitle>学校很大，大到能容下几千人；学校也很小，小到一出教室，就能看到想看的人。</subtitle>
-    <logo>https://Chuc-Jie.github.io/images/avatar.png</logo>
-    <icon>https://Chuc-Jie.github.io/favicon.ico</icon>
+    <logo>https://mooko.xyz/images/avatar.png</logo>
+    <icon>https://mooko.xyz/favicon.ico</icon>
     <rights>All rights reserved 2022, X同学要学习</rights>
     <entry>
         <title type="html"><![CDATA[LANDrop]]></title>
-        <id>https://Chuc-Jie.github.io/post/landrop/</id>
-        <link href="https://Chuc-Jie.github.io/post/landrop/">
+        <id>https://mooko.xyz/post/landrop/</id>
+        <link href="https://mooko.xyz/post/landrop/">
         </link>
         <updated>2022-03-14T12:35:54.000Z</updated>
         <summary type="html"><![CDATA[<p>📣一款 类 AirDrop 跨平台局域网文件传输工具</p>
@@ -23,8 +23,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Snipaste]]></title>
-        <id>https://Chuc-Jie.github.io/post/snipaste/</id>
-        <link href="https://Chuc-Jie.github.io/post/snipaste/">
+        <id>https://mooko.xyz/post/snipaste/</id>
+        <link href="https://mooko.xyz/post/snipaste/">
         </link>
         <updated>2022-03-14T12:09:40.000Z</updated>
         <summary type="html"><![CDATA[<p>📣 Snipaste 一款免费. 免安装. 可个性定制</p>
@@ -34,8 +34,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[KMS一键激活脚本]]></title>
-        <id>https://Chuc-Jie.github.io/post/kms-yi-jian-ji-huo-jiao-ben/</id>
-        <link href="https://Chuc-Jie.github.io/post/kms-yi-jian-ji-huo-jiao-ben/">
+        <id>https://mooko.xyz/post/kms-yi-jian-ji-huo-jiao-ben/</id>
+        <link href="https://mooko.xyz/post/kms-yi-jian-ji-huo-jiao-ben/">
         </link>
         <updated>2022-03-13T14:43:04.000Z</updated>
         <summary type="html"><![CDATA[<p>💾一个激活系统，激活office的脚本<br>
@@ -47,8 +47,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://Chuc-Jie.github.io/post/hello-gridea/</id>
-        <link href="https://Chuc-Jie.github.io/post/hello-gridea/">
+        <id>https://mooko.xyz/post/hello-gridea/</id>
+        <link href="https://mooko.xyz/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
