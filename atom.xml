@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mooko.xyz</id>
     <title>X同学要学习</title>
-    <updated>2022-03-15T05:14:45.680Z</updated>
+    <updated>2022-03-18T07:47:36.284Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mooko.xyz"/>
     <link rel="self" href="https://mooko.xyz/atom.xml"/>
@@ -12,6 +12,19 @@
     <logo>https://mooko.xyz/images/avatar.png</logo>
     <icon>https://mooko.xyz/favicon.ico</icon>
     <rights>All rights reserved 2022, X同学要学习</rights>
+    <entry>
+        <title type="html"><![CDATA[视频解析接口]]></title>
+        <id>https://mooko.xyz/6nRTswVgB/</id>
+        <link href="https://mooko.xyz/6nRTswVgB/">
+        </link>
+        <updated>2022-03-16T11:40:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>本人只是想记录下来<br>
+仅供学习</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本人只是想记录下来<br>
+仅供学习</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[子集、真子集]]></title>
         <id>https://mooko.xyz/ixVICH2mO/</id>
