@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mooko.xyz</id>
     <title>X同学要学习</title>
-    <updated>2022-03-18T08:28:37.175Z</updated>
+    <updated>2022-03-18T08:49:42.256Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mooko.xyz"/>
     <link rel="self" href="https://mooko.xyz/atom.xml"/>
@@ -12,6 +12,17 @@
     <logo>https://mooko.xyz/images/avatar.png</logo>
     <icon>https://mooko.xyz/favicon.ico</icon>
     <rights>All rights reserved 2022, X同学要学习</rights>
+    <entry>
+        <title type="html"><![CDATA[口算大师全能标准版]]></title>
+        <id>https://mooko.xyz/OfvLvcRQJ/</id>
+        <link href="https://mooko.xyz/OfvLvcRQJ/">
+        </link>
+        <updated>2022-03-18T08:37:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>一个生成算术小学、初中数学算术题目的脚本</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一个生成算术小学、初中数学算术题目的脚本</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[视频解析接口]]></title>
         <id>https://mooko.xyz/6nRTswVgB/</id>
