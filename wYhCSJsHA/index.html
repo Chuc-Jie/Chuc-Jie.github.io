@@ -1,0 +1,507 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>制作电子书的具体步骤 - X同学要学习</title>
+<link rel="shortcut icon" href="https://mooko.xyz/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://mooko.xyz/media/css/tailwind.css">
+<link rel="stylesheet" href="https://mooko.xyz/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="制作电子书的具体步骤 - X同学要学习 - Atom Feed" href="https://mooko.xyz/atom.xml">
+
+    
+
+  <meta name="description" content="整体流程
+先说一下整体步骤：
+（1）安装 gitbook 工具。
+（2）安装 calibre 软件，配置 ebook-convert工具。
+（3）将md格式的多个文件素材导出为电子书（支持 PDF、ePub、mobi 等格式）。
+（4）高级..." />
+  <meta property="og:title" content="制作电子书的具体步骤 - X同学要学习">
+  <meta property="og:description" content="整体流程
+先说一下整体步骤：
+（1）安装 gitbook 工具。
+（2）安装 calibre 软件，配置 ebook-convert工具。
+（3）将md格式的多个文件素材导出为电子书（支持 PDF、ePub、mobi 等格式）。
+（4）高级..." />
+  <meta property="og:type" content="articles">
+  <meta property="og:url" content="https://mooko.xyz/wYhCSJsHA/" />
+  <meta property="og:image" content="https://mooko.xyz/post-images/wYhCSJsHA.jpg">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200">
+  <meta name="twitter:title" content="制作电子书的具体步骤 - X同学要学习">
+  <meta name="twitter:description" content="整体流程
+先说一下整体步骤：
+（1）安装 gitbook 工具。
+（2）安装 calibre 软件，配置 ebook-convert工具。
+（3）将md格式的多个文件素材导出为电子书（支持 PDF、ePub、mobi 等格式）。
+（4）高级...">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mooko.xyz/wYhCSJsHA/">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+ 
+  
+    <link rel="stylesheet" href="https://mooko.xyz/media/css/prism-github.css">
+  
+
+  
+</head>
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <a href="https://mooko.xyz" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
+      X同学要学习
+    </a>
+    <div class="max-w-4xl w-full mx-auto">
+      <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
+        <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
+          制作电子书的具体步骤
+        </h1>
+        
+          <img src="https://mooko.xyz/post-images/wYhCSJsHA.jpg" alt="制作电子书的具体步骤" class="block w-full mb-8">
+        
+        <div class="mb-8 flex flex-wrap">
+          <div class="text-gray-400 text-sm mr-4">2022-03-25 · 12 min read</div>
+          
+        </div>
+        <div class="markdown mb-8" v-pre>
+          <h3 id="整体流程">整体流程</h3>
+<p>先说一下整体步骤：</p>
+<p>（1）安装 gitbook 工具。</p>
+<p>（2）安装 calibre 软件，配置 <code>ebook-convert</code>工具。</p>
+<p>（3）将<code>md</code>格式的多个文件素材导出为电子书（支持 PDF、ePub、mobi 等格式）。</p>
+<p>（4）高级进阶：配置电子书的目录、封面、页眉页脚等。</p>
+<p>整理流程如下：</p>
+<figure data-type="image" tabindex="1"><img src="https://pic4.zhimg.com/v2-155cda4c17e3e1876686afa0cef1d3ab_r.jpg" alt="img" loading="lazy"></figure>
+<p>接下来我们看看详细的完整步骤。</p>
+<h3 id="步骤-1通过-npm-安装-gitbook-cli">步骤 1：通过 npm 安装 gitbook-cli</h3>
+<p>安装命令如下：</p>
+<pre><code class="language-text">npm install -g gitbook-cli
+</code></pre>
+<p>安装成功之后，再执行<code>gitbook -V</code>命令确认是否安装成功：</p>
+<pre><code class="language-text">gitbook -V
+CLI version: 2.3.2
+GitBook version: 3.2.3
+</code></pre>
+<p>备注：如果你不知道 <code>npm</code> 是什么，可以自行查阅<strong>如何安装 Node.js 和 npm 环境</strong>。</p>
+<h3 id="步骤-2安装-ebook-convert针对-windows-用户">步骤 2：安装 ebook-convert（针对 Windows 用户）</h3>
+<p>ebook-convert 是能够自由转化格式的一个命令行工具，已经包含在 calibre 软件里面了。</p>
+<p>（1）安装 <code>calibre</code> 软件。calibre 的官网如下：（我们可以去官网下载安装）</p>
+<blockquote>
+<p>https://calibre-ebook.com/</p>
+</blockquote>
+<p>（2）在终端输入如下命令，验证 <code>ebook-convert</code> 是否能正常使用：</p>
+<pre><code class="language-text">ebook-convert --version
+</code></pre>
+<p>如果输入上面的命令后提示错误，说明你还需要将 calibre 的安装目录添加到系统的环境变量中。</p>
+<h3 id="步骤-2安装-ebook-convert针对-mac-用户">步骤 2：安装 ebook-convert（针对 Mac 用户）</h3>
+<p>ebook-convert 是能够自由转化格式的一个命令行工具，已经包含在 calibre 软件里面了。</p>
+<p>（1）安装 <code>calibre</code> 软件。calibre 的官网如下：（我们可以去官网下载安装）</p>
+<blockquote>
+<p>https://calibre-ebook.com/</p>
+</blockquote>
+<p>（2）配置 <code>ebook-convert</code>。针对 Mac 系统，需要执行如下命令，把 <code>ebook-convert</code> 软链接到 <code>bin</code> 目录：</p>
+<pre><code class="language-text">sudo ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/bin
+</code></pre>
+<p>执行上面的命令后，如果出现<code>Operation not permitted</code>异常，说明系统权限限制，此时需要<strong>配置环境变量</strong>。</p>
+<p>（3）环境变量配置：</p>
+<pre><code class="language-bash">vim ~/.bash_profile
+
+# 将下面这两行配置，添加到 .bash_profile 文件中
+export EBOOK_PATH=/Applications/calibre.app/Contents/MacOS
+export PATH=$PATH:$EBOOK_PATH
+</code></pre>
+<p>备注：可以自行研究下，在命令行环境，如何通过 vim 编辑文件。</p>
+<p>然后刷新一下刚刚的配置：</p>
+<pre><code class="language-text">source ~/.bash_profile
+</code></pre>
+<p>验证<code>ebook-convert</code>是否能正常使用：</p>
+<pre><code class="language-text">ebook-convert --version
+</code></pre>
+<h3 id="步骤-3配置电子书的目录">步骤 3：配置电子书的目录</h3>
+<p>本地新建一个空的文件夹，作为我们的电子书项目。文件夹的名字随便起，但建议用英文命名。</p>
+<p>（1）项目初始化。</p>
+<p>在当前项目下，执行如下命令，进行初始化：</p>
+<pre><code class="language-text">gitbook init
+</code></pre>
+<p>此时，项目下会自动生成如下两个文件：（<strong>非常重要，必不可少</strong>）</p>
+<ul>
+<li><code>README.md</code>：书籍的简介放在这个文件里。</li>
+<li><code>SUMMARY.md</code>：书籍的<strong>目录结构</strong>在这里配置。</li>
+</ul>
+<p>这两个文件创建后，内容为空白，可使用 Markdown 语言自定义内容。</p>
+<p>（2）配置电子书的目录。</p>
+<p>我们先把本地的 markdown 文件（也就是我们的<strong>电子书素材</strong>）放到项目中，然后在<code>SUMMARY.md</code>文件中配置电子书的目录。</p>
+<p>比如说， 我的项目中有下面这些文件：</p>
+<figure data-type="image" tabindex="2"><img src="https://pic.imgdb.cn/item/623dcfdd27f86abb2a1f00f1.jpg" alt="img" loading="lazy"></figure>
+<p>那么，我在<code>SUMMARY.md</code>文件中就要这样配置：</p>
+<pre><code class="language-text"># 目录
+
+* [README](./README.md)
+* [00-前端工具](00-前端工具/0-README.md)
+  * [01-VS Code的使用](00-前端工具/01-VS Code的使用.md)
+  * [02-Git的使用](00-前端工具/02-Git的使用.md)
+* [01-HTML](01-HTML/0-README.md)
+  * [01-认识Web和Web标准](01-HTML/01-认识Web和Web标准.md)
+  * [02-浏览器的介绍](01-HTML/02-浏览器的介绍.md)
+  * [03-初识HTML](01-HTML/03-初识HTML.md)
+* [02-CSS基础](02-CSS基础/0-README.md)
+  * [01-CSS属性：字体属性和文本属性](02-CSS基础/01-CSS属性：字体属性和文本属性.md)
+  * [02-CSS属性：背景属性](02-CSS基础/02-CSS属性：背景属性.md)
+  * [03-CSS样式表和选择器](02-CSS基础/03-CSS样式表和选择器.md)
+* [03-JavaScript基础](03-JavaScript基础/0-README.md)
+  * [00-编程语言](03-JavaScript基础/00-编程语言.md)
+  * [01-JS简介](03-JavaScript基础/01-JS简介.md)
+  * [02-变量](03-JavaScript基础/02-变量.md)
+  * [03-变量的数据类型：基本数据类型和引用数据类型](03-JavaScript基础/03-变量的数据类型：基本数据类型和引用数据类型.md)
+</code></pre>
+<p>制作成的目录，将会是下面这种效果：</p>
+<figure data-type="image" tabindex="3"><img src="https://s2.loli.net/2022/03/25/aAQlYWUZGST3uKc.jpg" alt="img" loading="lazy"></figure>
+<h3 id="步骤-4导出电子书">步骤 4：导出电子书</h3>
+<p>（1）本地预览电子书：</p>
+<pre><code class="language-text">gitbook serve
+</code></pre>
+<p>执行上方命令后，工具会对项目里的 Markdown 格式的文件进行转换，默认转换为 html 格式，最后提示 <code>Serving book on http://localhost:4000</code>。</p>
+<p>我们打开浏览器输入<code>http://localhost:4000</code>，预览一下电子书的效果：</p>
+<figure data-type="image" tabindex="4"><img src="https://s2.loli.net/2022/03/25/aE8wHRtg7jQbJiW.jpg" alt="img" loading="lazy"></figure>
+<p>（2）制作并导出电子书。<strong>接下来就是见证奇迹的时刻</strong>。</p>
+<p>生成 PDF 格式的电子书：（PDF 是最常见的文档格式）</p>
+<pre><code class="language-text">gitbook pdf ./ ./mybook.pdf
+</code></pre>
+<p>生成 epub 格式的电子书：（epub 是最常见、最通用的电子书格式）</p>
+<pre><code class="language-bash">gitbook epub ./ ./mybook.epub
+</code></pre>
+<p>生成 mobi 格式的电子书：（mobi 格式可以在 kindle 中打开）</p>
+<pre><code class="language-text">gitbook mobi ./ ./mybook.mobi
+</code></pre>
+<p>上面这三种格式的电子书生成之后，项目里会看到这三个新增的文件：</p>
+<figure data-type="image" tabindex="5"><img src="https://s2.loli.net/2022/03/25/eXHcyGwvpUZa3om.jpg" alt="img" loading="lazy"></figure>
+<p>我们把电子书打开，验收一下成果。</p>
+<p>打开 pdf 电子书看看效果：</p>
+<figure data-type="image" tabindex="6"><img src="https://s2.loli.net/2022/03/25/OEgjvem83WLFzid.jpg" alt="img" loading="lazy"></figure>
+<p>打开 epub 电子书看看效果：</p>
+<figure data-type="image" tabindex="7"><img src="https://s2.loli.net/2022/03/25/I4UxMeTJClOv5Au.jpg" alt="img" loading="lazy"></figure>
+<p>怎么样，自制电子书就这样做好了，是不是很有成就感？</p>
+<h2 id="制作电子书的高级配置">制作电子书的高级配置</h2>
+<p>电子书做好之后，我猜你肯定想进一步做<strong>个性化配置</strong>，比如：怎么加封面？怎么修改页眉页脚？还有其他的一些配置。</p>
+<p>我们来看看亲手制作的电子书，有哪些常见的高级配置。</p>
+<h3 id="制作书籍封面">制作书籍封面</h3>
+<p>为了让书籍显示得更加优雅，我们可以指定一个自定义的封面。操作如下：</p>
+<p>在项目的根目录下准备好 <code>cover.jpg</code> （大封面）和 <code>cover_small.jpg</code> （小封面）这两种封面图片。注意，图片的文件名和后缀名必须严格按照这句话来。</p>
+<p>GitBook 的官方文档建议： <code>cover.jpg</code> （大封面）的尺寸为 1800x2360 像素，<code>cover_small.jpg</code>（小封面）的尺寸为 200x262 像素。图片的制作，建议遵循如下规范：</p>
+<ul>
+<li>没有边框</li>
+<li>清晰可见的书本标题</li>
+<li>任何重要的文字在小封面中应该清晰可见</li>
+</ul>
+<h3 id="bookjson-电子书的各种配置">book.json ：电子书的各种配置</h3>
+<p>我们可以在项目的根目录下新建一个文件<code>book.json</code>（注意，文件名是<code>book</code>，后缀名是<code>json</code>），这个<code>book.json</code>就是电子书的配置文件，可以在里面填一些常见的配置。</p>
+<p>关于 book.json 的配置项有很多，我们可以在网上搜索“GitBook book.json”找到。这里大致列举一些。</p>
+<p>1、<strong>常规配置</strong>如下：</p>
+<figure data-type="image" tabindex="8"><img src="https://s2.loli.net/2022/03/25/Akltui6PfWgR9I3.jpg" alt="img" loading="lazy"></figure>
+<p>配置 book.json 的示例如下：</p>
+<pre><code class="language-json">{
+    &quot;title&quot;: &quot;前端入门和进阶图文教程&quot;,
+    &quot;description&quot;: &quot;前端入门到进阶图文教程，超详细的Web前端学习笔记。从零开始学前端，做一名精致优雅的前端工程师。公众号「千古壹号」作者。&quot;,
+    &quot;author&quot;: &quot;千古壹号&quot;,
+    &quot;language&quot;: &quot;zh-hans&quot;,
+    &quot;gitbook&quot;: &quot;3.2.3&quot;,
+    &quot;root&quot;: &quot;.&quot;
+}
+</code></pre>
+<p>备注：上面的<code>root</code>根目录为当前目录，使用默认的就好，此项可以删掉，这里仅做演示。</p>
+<p>2、<strong>pdf</strong> 的配置如下：（使用 <code>book.json</code> 中的一组选项来定制 PDF 输出）</p>
+<p>| 配置项 | 描述 | | ----------------- | ------------------------------------------------------------ | | pdf.pageNumbers | 将页码添加到每个页面的底部（默认为 true） | | pdf.fontSize | 基本字体大小（默认是 12） | | pdf.fontFamily | 基本字体样式（默认是 Arial） | | pdf.paperSize | 页面尺寸，选项有： a0、a1、 a2、 a3、a4、a5、a6、b0、b1、b2、b3、b4、b5、b6、legal、letter （默认值是 a4） | | pdf.margin.top | 上边距（默认值是 56） | | pdf.margin.bottom | 下边距（默认值是 56） | | pdf.margin.left | 左边距（默认值是 62） | | pdf.margin.right | 右边距（默认值是 62） |</p>
+<p>定制 PDF 文档输出格式的示例代码如下：</p>
+<pre><code class="language-json">{
+    &quot;pdf&quot;: {
+        &quot;pageNumbers&quot;: false,
+        &quot;fontSize&quot;: 12,
+        &quot;paperSize&quot;: &quot;a4&quot;,
+        &quot;margin&quot;: {
+            &quot;top&quot;: 36,
+            &quot;bottom&quot;: 36,
+            &quot;left&quot;: 62,
+            &quot;right&quot;: 62
+        }
+    }
+}
+</code></pre>
+<p>备注：如果你不需要对输出的 pdf 做任何特定的配置，则不需要添加上面的内容，让 pdf 的输出格式保持默认就好。</p>
+<p>3、<strong>plugins</strong> 插件：</p>
+<p>插件及其配置在 <code>book.json</code> 中指定，让电子书的配置能力更加强大。</p>
+<p>通过插件，我们可以做很多事情，比如：修改页眉页脚、自动生成并显示图片的标题等。</p>
+<p>另外，针对<strong>在线版</strong>的GitBook电子书，也有很多插件，这里列举几个：</p>
+<ul>
+<li>自带的search插件不支持中文搜索，使用起来非常不方便，还好<code>search-pro</code>插件横空出世，让搜索功能焕发出新的生机。插件地址：https://github.com/gitbook-plugins/gitbook-plugin-search-pro</li>
+<li>默认侧边栏宽度是不能够调节的，如果想通过拖拽的方式自由调节侧边栏宽度，可以使用插件<code>splitter</code>。插件地址：https://github.com/yoshidax/gitbook-plugin-splitter</li>
+<li>donate插件支持定义和显示支付宝和微信打赏。插件地址：http://github.com/willin/gitbook-plugin-donate</li>
+</ul>
+<p>关于插件的具体配置，感兴趣的同学可以自行研究下。</p>
+<h3 id="自动生成目录重要">自动生成目录（重要）</h3>
+<p>如果你的电子书素材里有很多 markdown 文件，那么，如何将多个 markdown 文件的文件名，在<code>SUMMARY.md</code>里快速生成对应的目录？</p>
+<p>难道要一个一个地手动 copy 吗？这不可能。</p>
+<p>说白了，这个需求就是：<strong>如何自动生成电子书的目录</strong>？改变世界的程序员用「脚本」就能搞定，一键执行。</p>
+<p>网上有很多好用的脚本，我给你推荐一个亲测好用的脚本：</p>
+<blockquote>
+<p>GitBook 自动生成目录的脚本：https://github.com/fushenghua/gitbook-plugin-summary</p>
+</blockquote>
+<p>操作方法很简单，把上面这个链接中的项目下载下来，进入到这个项目的目录，执行 <code>$ python gitbook-plugin-summary.py dirPath</code> 即可自动生成电子书的目录，亲测有效。备注：这里的<code>dirPath</code>指的是你的电子书目录的绝对路径。</p>
+<p>对了，在执行上面这个脚本之前，记得先安装 <code>Python</code> 环境。</p>
+<h2 id="电子书用什么软件打开">电子书用什么软件打开</h2>
+<h3 id="用什么软件打开-pdf">用什么软件打开 PDF</h3>
+<p>Windows 平台：可以用「福昕阅读器」或者「Acrobat Reader DC」。「福昕阅读器」既有 Windows 平台，也有 Mac 平台。</p>
+<p>Mac 平台：可以用自带的「预览」打开。</p>
+<p>其实，不管你用的是 Windows 电脑还是 Mac 电脑，你都可以用 Chrome 浏览器打开 PDF。</p>
+<p>iPhone 或 iPad平台：可以用自带的「iBooks」打开，或者用「WPS Office」打开。也可以用第三方软件「GoodReader」，不过需要 40 人民币。</p>
+<p>Android 手机：可以用「WPS Office」等第三方办公软件打开。</p>
+<h3 id="用什么软件阅读-epub-电子书">用什么软件阅读 ePub 电子书</h3>
+<p>Windows 平台：可以用「calibre」软件阅读 epub 电子书。</p>
+<p>Mac &amp; iPhone &amp; iPad 平台：用自带的「iBooks」阅读即可。iBooks 可以非常方便地对电子书进行标注和搜索，无疑是体验最好的 ePub 电子书阅读软件。</p>
+<p>Android 手机：可以用「多看阅读」App 来阅读 epub 格式电子书。</p>
+<h3 id="用什么方式阅读-mobi-电子书">用什么方式阅读 mobi 电子书</h3>
+<p>kindle 电子书有两种常见的电子书格式：「mobi」格式和「azw3」格式。</p>
+<ul>
+<li>针对 mobi 格式的电子书，你既可以通过邮件的形式将其发送到 kindle 阅读器（可以自行网上查一下相关教程），也可以将其拷贝到 kindle 阅读器（是连接 usb 进行拷贝）。</li>
+<li>针对 azw3 格式的电子书，就只能通过拷贝的形式（是连接 usb 拷贝）传输到 kindle 阅读器。</li>
+</ul>
+
+        </div>
+        <!-- Share to Twitter, Weibo, Telegram -->
+        <div class="flex items-center">
+          <div class="mr-4 flex items-center">
+            <i class="ri-share-forward-line text-gray-500"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTwitter">
+            <i class="ri-twitter-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex" @click="shareToWeibo">
+            <i class="ri-weibo-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTelegram">
+            <i class="ri-telegram-line"></i>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://mooko.xyz/" target="_blank">X同学要学习</a>
+</footer>
+    </div>
+
+    <!-- TOC Container -->
+    <div class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight" @click="showToc = true">
+      <i class="ri-file-list-line"></i>
+    </div>
+
+    <div class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast" :class="{ '-mr-64': !showToc }">
+      <div class="flex mb-4 justify-end">
+        <div class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast" @click="showToc = false">
+          <i class="ri-close-line text-lg"></i>
+        </div>
+      </div>
+      <div class="post-toc-container">
+        <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B">整体流程</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4-1%E9%80%9A%E8%BF%87-npm-%E5%AE%89%E8%A3%85-gitbook-cli">步骤 1：通过 npm 安装 gitbook-cli</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4-2%E5%AE%89%E8%A3%85-ebook-convert%E9%92%88%E5%AF%B9-windows-%E7%94%A8%E6%88%B7">步骤 2：安装 ebook-convert（针对 Windows 用户）</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4-2%E5%AE%89%E8%A3%85-ebook-convert%E9%92%88%E5%AF%B9-mac-%E7%94%A8%E6%88%B7">步骤 2：安装 ebook-convert（针对 Mac 用户）</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4-3%E9%85%8D%E7%BD%AE%E7%94%B5%E5%AD%90%E4%B9%A6%E7%9A%84%E7%9B%AE%E5%BD%95">步骤 3：配置电子书的目录</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4-4%E5%AF%BC%E5%87%BA%E7%94%B5%E5%AD%90%E4%B9%A6">步骤 4：导出电子书</a></li>
+</ul>
+</li>
+<li><a href="#%E5%88%B6%E4%BD%9C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%9A%84%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE">制作电子书的高级配置</a>
+<ul>
+<li><a href="#%E5%88%B6%E4%BD%9C%E4%B9%A6%E7%B1%8D%E5%B0%81%E9%9D%A2">制作书籍封面</a></li>
+<li><a href="#bookjson-%E7%94%B5%E5%AD%90%E4%B9%A6%E7%9A%84%E5%90%84%E7%A7%8D%E9%85%8D%E7%BD%AE">book.json ：电子书的各种配置</a></li>
+<li><a href="#%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E9%87%8D%E8%A6%81">自动生成目录（重要）</a></li>
+</ul>
+</li>
+<li><a href="#%E7%94%B5%E5%AD%90%E4%B9%A6%E7%94%A8%E4%BB%80%E4%B9%88%E8%BD%AF%E4%BB%B6%E6%89%93%E5%BC%80">电子书用什么软件打开</a>
+<ul>
+<li><a href="#%E7%94%A8%E4%BB%80%E4%B9%88%E8%BD%AF%E4%BB%B6%E6%89%93%E5%BC%80-pdf">用什么软件打开 PDF</a></li>
+<li><a href="#%E7%94%A8%E4%BB%80%E4%B9%88%E8%BD%AF%E4%BB%B6%E9%98%85%E8%AF%BB-epub-%E7%94%B5%E5%AD%90%E4%B9%A6">用什么软件阅读 ePub 电子书</a></li>
+<li><a href="#%E7%94%A8%E4%BB%80%E4%B9%88%E6%96%B9%E5%BC%8F%E9%98%85%E8%AF%BB-mobi-%E7%94%B5%E5%AD%90%E4%B9%A6">用什么方式阅读 mobi 电子书</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <div class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200" @click="backToUp" v-show="scrolled">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+  </div>
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe. 
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg">
+  </div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter">
+        </div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip">
+        </div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://mooko.xyz/media/scripts/main.js"></script>
+  
+  <!-- Code Highlight -->
+  
+    <script src="https://mooko.xyz/media/prism.js"></script>
+    <script>
+      Prism.highlightAll()
+    </script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+  <script>
+    //拿到预览框架，也就是上面的html代码
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    //定义图片数组变量
+    var imgitems;
+    /**
+    * 用于显示预览界面
+    * @param index 图片数组下标
+    */
+    function viewImg(index) {
+      //其它选项这里不做过多阐述，详情见官网
+      var pswpoptions = {
+        index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+        bgOpacity: 0.7, // 背景透明度，0-1
+        maxSpreadZoom: 3, // 缩放级别，不要太大
+      };
+      //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgitems, pswpoptions);
+      gallery.init()
+    }
+    /**
+    * 用于添加图片点击事件
+    * @param img 图片元素
+    * @param index 所属下标（在imgitems中的位置）
+    */
+    function addImgClick(img, index) {
+      img.onclick = function() {
+        viewImg(index)
+      }
+    }
+    /**
+    * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+    * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+    * 异步加载图片可在图片元素创建完成后调用此方法
+    */
+    function initImg() {
+      //重置图片数组
+      imgitems = [];
+      //查找class:markdown 下的所有img元素并遍历
+      var imgs = document.querySelectorAll('.markdown img');
+      for (var i = 0; i < imgs.length; i++) {
+        var img = imgs[i];
+        //本站相册初始为loading图片，真实图片放在data-src
+        var ds = img.getAttribute("data-src");
+        //创建image对象，用于获取图片宽高
+        var imgtemp = new Image();
+        //判断是否存在data-src
+        if (ds != null && ds.length > 0) {
+          imgtemp.src = ds
+        } else {
+          imgtemp.src = img.src
+        }
+        //判断是否存在缓存
+        if (imgtemp.complete) {
+          var imgobj = {
+            "src": imgtemp.src,
+            "w": imgtemp.width,
+            "h": imgtemp.height,
+          };
+          imgitems[i] = imgobj;
+          addImgClick(img, i);
+        } else {
+          console.log('进来了2')
+          imgtemp.index = i;
+          imgtemp.img = img;
+          imgtemp.onload = function() {
+            var imgobj = {
+              "src": this.src,
+              "w": this.width,
+              "h": this.height,
+            };
+            //不要使用push，因为onload前后顺序会不同
+            imgitems[this.index] = imgobj
+            //添加点击事件
+            addImgClick(this.img, this.index);
+          }
+        }
+      }
+    }
+    //初始化
+    initImg();
+  </script>
+  
+  
+</body>
+
+</html>
