@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mooko.xyz</id>
     <title>X同学要学习</title>
-    <updated>2022-03-27T14:55:59.278Z</updated>
+    <updated>2022-03-29T10:08:43.096Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mooko.xyz"/>
     <link rel="self" href="https://mooko.xyz/atom.xml"/>
@@ -11,6 +11,17 @@
     <logo>https://mooko.xyz/images/avatar.png</logo>
     <icon>https://mooko.xyz/favicon.ico</icon>
     <rights>All rights reserved 2022, X同学要学习</rights>
+    <entry>
+        <title type="html"><![CDATA[”观影大站“]]></title>
+        <id>https://mooko.xyz/DHazuC7PV/</id>
+        <link href="https://mooko.xyz/DHazuC7PV/">
+        </link>
+        <updated>2022-03-27T15:06:02.000Z</updated>
+        <summary type="html"><![CDATA[<p>一个看影视网站收集帖~</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一个看影视网站收集帖~</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[制作电子书的具体步骤]]></title>
         <id>https://mooko.xyz/wYhCSJsHA/</id>
@@ -106,17 +117,6 @@
         <summary type="html"><![CDATA[<p>📣一款 类 AirDrop 跨平台局域网文件传输工具</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>📣一款 类 AirDrop 跨平台局域网文件传输工具</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Snipaste]]></title>
-        <id>https://mooko.xyz/snipaste/</id>
-        <link href="https://mooko.xyz/snipaste/">
-        </link>
-        <updated>2022-03-14T12:09:40.000Z</updated>
-        <summary type="html"><![CDATA[<p>📣 Snipaste 一款免费. 免安装. 可个性定制的截图软件</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>📣 Snipaste 一款免费. 免安装. 可个性定制的截图软件</p>
 ]]></content>
     </entry>
 </feed>
