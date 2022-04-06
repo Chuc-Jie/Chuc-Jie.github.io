@@ -36,8 +36,8 @@
 
                         /* CSS3属性 */
                 }
-                
-                body{
+
+                body {
                         background-color: #FAF9F7;
                 }
 
@@ -145,7 +145,7 @@
                 }
 
                 textarea {
-                        width: 25rem;
+                        width: 21.5rem;
                         height: 13.75rem;
                         overflow: hidden;
                         height: 1rem;
@@ -159,7 +159,6 @@
                         min-width: 25rem;
                         min-height: 13.75rem;
                         font-size: 1.375rem;
-                        /* padding: 0.75rem; */
                 }
         </style>
 </head>
@@ -170,13 +169,15 @@
                 <p>Tips：标题和内容记得不能空着！！</p>
 
                 <h3>标题</h3>
-                <input type="text" rows="1" id="data-title" class="formControl" name="title" required="required">
+                <input type="text" rows="1" id="data-title" class="formControl" name="title" required="required"
+                        placeholder=" 昵称/留言/建议">
 
                 <h3>内容</h3>
                 <!-- <input type="text" id="data-cont" class="formControl" name="title" required="required"> -->
 
                 <textarea id="data-cont" cols="30" rows="5" onpropertychange=""
-                        oninput="this.style.height=this.scrollHeight+'px';" required="required"></textarea>
+                        oninput="this.style.height=this.scrollHeight+'px';" required="required"
+                        placeholder=" 在这里写你想发给我内容"></textarea>
                 <input type="submit" id="title_cont" value="测试" onclick="title_get()" />
 
 
@@ -184,7 +185,24 @@
 </body>
 
 <script>
-
+        function CloseWebPage() {
+                if (navigator.userAgent.indexOf("MSIE") > 0) {
+                        if (navigator.userAgent.indexOf("MSIE 6.0") > 0) {
+                                window.opener = null;
+                                window.close();
+                        } else {
+                                window.open('', '_top');
+                                window.top.close();
+                        }
+                }
+                else if (navigator.userAgent.indexOf("Firefox") > 0) {
+                        window.location.href = 'about:blank ';
+                } else {
+                        window.opener = null;
+                        window.open('', '_self', '');
+                        window.close();
+                }
+        }
 
         function title_get() {
 
@@ -221,7 +239,8 @@
                         window.history.go(-1);//返回上一页不刷新 
 
 
-                        // alert('留言成功！\n请关闭页面')
+                        alert('留言成功！\n请关闭页面')
+                        CloseWebPage()
 
 
                 }
