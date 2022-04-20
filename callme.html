@@ -235,11 +235,9 @@
                         request.open("GET", url)
                         request.send(null)
 
-                        let isBoss = confirm("留言成功！\n自动关闭页面");
+                        let isBoss = confirm("留言成功！\n点击确定返回上个页面");
                         window.history.go(-1);//返回上一页不刷新 
 
-
-                        alert('留言成功！\n请关闭页面')
                         CloseWebPage()
 
 
