@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://mooko.xyz</id>
     <title>X同学要学习</title>
-    <updated>2022-04-21T08:17:23.786Z</updated>
+    <updated>2022-04-21T08:19:52.589Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://mooko.xyz"/>
+    <link rel="self" href="https://mooko.xyz/atom.xml"/>
     <subtitle>学校很大，是人群熙熙攘攘；&lt;br&gt;
-学校很小，是你就在不远之处。</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+学校很小，是你在不远之处。</subtitle>
+    <logo>https://mooko.xyz/images/avatar.png</logo>
+    <icon>https://mooko.xyz/favicon.ico</icon>
     <rights>All rights reserved 2022, X同学要学习</rights>
     <entry>
         <title type="html"><![CDATA[40篇短文搞定高考英语3500单词]]></title>
-        <id>http://localhost:4000/dDysde2vf/</id>
-        <link href="http://localhost:4000/dDysde2vf/">
+        <id>https://mooko.xyz/dDysde2vf/</id>
+        <link href="https://mooko.xyz/dDysde2vf/">
         </link>
         <updated>2022-04-21T07:52:37.000Z</updated>
         <summary type="html"><![CDATA[<p>快速记忆法——通过短文熟记</p>
@@ -24,8 +24,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[X同学的存储仓]]></title>
-        <id>http://localhost:4000/_ka1gviJ0/</id>
-        <link href="http://localhost:4000/_ka1gviJ0/">
+        <id>https://mooko.xyz/_ka1gviJ0/</id>
+        <link href="https://mooko.xyz/_ka1gviJ0/">
         </link>
         <updated>2022-04-21T07:11:55.000Z</updated>
         <summary type="html"><![CDATA[<p>一个从搭建到完工都完全免费的私人网盘<img src="https://mooko.xyz/post-images/1650527995405.png" alt="" loading="lazy"></p>
@@ -35,8 +35,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[css设置禁止复制]]></title>
-        <id>http://localhost:4000/rB5JuRcbQ/</id>
-        <link href="http://localhost:4000/rB5JuRcbQ/">
+        <id>https://mooko.xyz/rB5JuRcbQ/</id>
+        <link href="https://mooko.xyz/rB5JuRcbQ/">
         </link>
         <updated>2022-04-06T09:27:40.000Z</updated>
         <summary type="html"><![CDATA[<p>css设置禁止复制</p>
@@ -46,8 +46,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[box-shadow实现四周阴影]]></title>
-        <id>http://localhost:4000/iEJLv-Dat/</id>
-        <link href="http://localhost:4000/iEJLv-Dat/">
+        <id>https://mooko.xyz/iEJLv-Dat/</id>
+        <link href="https://mooko.xyz/iEJLv-Dat/">
         </link>
         <updated>2022-04-01T14:49:04.000Z</updated>
         <summary type="html"><![CDATA[<p>box-shadow实现四周阴影</p>
@@ -57,8 +57,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[常用正则表达式]]></title>
-        <id>http://localhost:4000/nuQhKVgLG/</id>
-        <link href="http://localhost:4000/nuQhKVgLG/">
+        <id>https://mooko.xyz/nuQhKVgLG/</id>
+        <link href="https://mooko.xyz/nuQhKVgLG/">
         </link>
         <updated>2022-03-31T02:40:11.000Z</updated>
         <summary type="html"><![CDATA[<p>常用正则表达式</p>
@@ -68,8 +68,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[JSON API免费接口]]></title>
-        <id>http://localhost:4000/WYaOqJGTU/</id>
-        <link href="http://localhost:4000/WYaOqJGTU/">
+        <id>https://mooko.xyz/WYaOqJGTU/</id>
+        <link href="https://mooko.xyz/WYaOqJGTU/">
         </link>
         <updated>2022-03-30T12:31:43.000Z</updated>
         <summary type="html"><![CDATA[<p>JSON API免费接口</p>
@@ -79,8 +79,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[“ 观影大站 ”]]></title>
-        <id>http://localhost:4000/DHazuC7PV/</id>
-        <link href="http://localhost:4000/DHazuC7PV/">
+        <id>https://mooko.xyz/DHazuC7PV/</id>
+        <link href="https://mooko.xyz/DHazuC7PV/">
         </link>
         <updated>2022-03-27T15:06:02.000Z</updated>
         <summary type="html"><![CDATA[<p>资源在阿里云盘，所以下载速度贼快~</p>
@@ -90,8 +90,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[制作电子书的具体步骤]]></title>
-        <id>http://localhost:4000/wYhCSJsHA/</id>
-        <link href="http://localhost:4000/wYhCSJsHA/">
+        <id>https://mooko.xyz/wYhCSJsHA/</id>
+        <link href="https://mooko.xyz/wYhCSJsHA/">
         </link>
         <updated>2022-03-25T14:21:59.000Z</updated>
         <summary type="html"><![CDATA[<p>制作电子书的具体步骤</p>
@@ -101,8 +101,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[【一 · 句】一个公开的句子分享刊]]></title>
-        <id>http://localhost:4000/JP8rcM8y5/</id>
-        <link href="http://localhost:4000/JP8rcM8y5/">
+        <id>https://mooko.xyz/JP8rcM8y5/</id>
+        <link href="https://mooko.xyz/JP8rcM8y5/">
         </link>
         <updated>2022-03-23T15:47:53.000Z</updated>
         <summary type="html"><![CDATA[<p>利用Note.ms进行句子分享</p>
@@ -112,8 +112,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[在线记事本]]></title>
-        <id>http://localhost:4000/cDdpmiLIm/</id>
-        <link href="http://localhost:4000/cDdpmiLIm/">
+        <id>https://mooko.xyz/cDdpmiLIm/</id>
+        <link href="https://mooko.xyz/cDdpmiLIm/">
         </link>
         <updated>2022-03-20T04:27:46.000Z</updated>
         <summary type="html"><![CDATA[<p>一个在线记事本，用于在你的各个设备之间传网址和大段文本。</p>
