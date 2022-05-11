@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mooko.xyz</id>
     <title>X同学要学习</title>
-    <updated>2022-05-11T16:01:18.959Z</updated>
+    <updated>2022-05-11T16:24:25.001Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mooko.xyz"/>
     <link rel="self" href="https://mooko.xyz/atom.xml"/>
@@ -17,6 +17,12 @@
         <link href="https://mooko.xyz/4YtBUFgxL/">
         </link>
         <updated>2022-05-10T05:51:30.000Z</updated>
+        <summary type="html"><![CDATA[<p>Github +  Vercel + Hexo<br>
+托管、域名可以说是白嫖到底了</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Github +  Vercel + Hexo<br>
+托管、域名可以说是白嫖到底了</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[X同学的存储仓]]></title>
